@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Urbanist:wght@800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Urbanist:wght@500&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        body{
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://thumbs.dreamstime.com/b/happy-family-children-relaxing-couch-laptop-happy-family-children-relaxing-couch-laptop-smiling-young-187860706.jpg');
+            background-repeat:none;
+            background-size:cover;
+            font-family: 'Urbanist', sans-serif;
+        }
+        .navbar2{
+            width:80%;
+            justify-content:space-between;
+            display:flex;
+            align-items:center;
+            height:10vh;
+            color:white;
+        }
+
+        .navbar{
+            position:relative;
+            left:180px;
+        }
+        .navbar ul{
+            display:flex;
+            list-style:none;
+            gap:4rem;
+        }
+        .navbar ul a{
+            text-decoration:none;
+            gap:2rem;
+            color:white;
+        }
+        .logo{
+        position:relative;
+        left:150px;
+        color:white;
+        text-decoration:none;
+        align-items:center;
+       }
+
+
+        .logo a{
+            align-items:center;
+            position:relative;
+            bottom:15px;
+            color:white;
+            text-decoration:none;
+        
+        }
+        
+
+       .column{
+            height:450px;
+            display:flex;
+            position:relative;
+            top:100px;
+            left:250px;
+       }
+
+        .form-text{
+        
+            align-items:center;     
+            background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://wallpapercave.com/wp/wp9442288.jpg');
+            background-size:cover;
+            background-repeat:none;
+            padding-left:30px;
+            width:30%;
+            color:white;
+       }
+        .form1{
+            height:500px;
+        }
+        
+       form{
+            display:flex;
+            flex-wrap:wrap;
+            padding-top:20px;
+            padding-left:20px;
+            background-color:white;
+       }
+       .registration-form{
+            background-color:white;
+            padding-top:10px;
+            text-align:center;
+            width:35%;
+            height:400px;
+            padding-top:20px;
+       }
+
+
+       .ab{
+            margin-right:20px;
+            margin-bottom:20px;
+            height:38px;
+            font-size:15px;
+            font-weight:bold;
+            width:200px;
+            padding-left:5px;
+            font-family: 'Urbanist', sans-serif;
+            border-radius:30px;
+       }
+
+       .registration-form{
+            height:450px;
+       }
+
+
+
+      
+        
+        
+        #gender{
+    
+        }
+        .gender{
+            align-items:center;
+            position:relative;
+            top:10px;
+        }
+        
+        .p1{
+            position:relative;
+            top:160px;
+        }
+        .h2{
+            position:relative;
+            top:150px;
+        }
+        .registration-form h1{
+            padding-bottom:20px;
+        
+        
+        }
+         .go{
+            align-items:center;
+            background-color: rgb(5, 5, 15);
+            height:60px;
+            width:420px;
+            
+            color:white;
+            transition:0.5s ease-in-out;
+            position:relative;
+            font-weight:400;
+            border-radius:30px;
+            cursor:pointer;
+            font-size:20px;
+            font-family:'Urbanist', sans-serif;
+            margin-top:10px;
+        }
+        .go{
+            
+            
+        }
+        .go:hover{
+            background-color:rgb(13, 13, 19);
+            transform:scale(1.1,1.1);
+        }
+        .login{
+            background-color:transparent;
+            border: 2px solid white;
+            color:white;
+            font-family:  'Urbanist', sans-serif;
+        
+            align-items:center;
+            width:100px;
+            height:50px;
+            position:relative;
+            top:170px;
+            font-size:large;
+            font-weight:700;
+            cursor:pointer;
+        }
+        .login:hover{
+            color:black;
+            background-color:white;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="registration-header">
+   
+    <div class="column">
+                    <div class="form-text">
+                
+                        <h2 class="h2">Welcome to the EcoTech Shopping Point</h2><br>
+                        <p class="h2">Platform where shopping is your destiny</p>
+                        <p class="h2">Please register for shopping</p>
+                    
+                        <a href="/read"><button class="login">Login</button></a>                       
+                    </div>
+                    <div class="registration-form">
+                        <h2>Create Account</h2>
+                        <div class="form">
+                        <form action="/create" method="post">
+
+                            <input type="text" placeholder="Enter your firstname" name="firstname" id="firstname" class="ab" required><br><br>
+    
+                            <input type="text" placeholder="Enter your lastname" name='lastname' id='lastname' class='ab'required><br><br>
+    
+                            <input type="text" placeholder="Enter your email" name='email' id='email'  class="ab" required><br><br>
+                            <div class="gender">
+                            <label for="Gender" class="gender1">Gender:</label>
+                            <input type="radio" name="gender" id="gender" value="Male">Male
+                            <input type="radio" name="gender" id="gender" value="Female">Female<br><br>
+                            </div>
+                            <input type="text" placeholder="Enter your phone number" name="phone" id="phone" class="ab" required><br><br>
+                            <input type="text" placeholder="Enter your username" name="username" id="username" class="ab" required><br><br>
+                            <input type="number" placeholder="Enter your age" name="age" id="age" class="ab" required><br><br>
+                            <input type="password" placeholder="Enter your password" name='password' id='password'class="ab" required><br><br>
+    
+                            <input type="password" placeholder="Enter your confirm password" name="confirmpassword" id="confirmpassword" class="ab" required><br><br>
+                            <button class="go">Register</button>
+                            </form>                     
+                        </div>
+                    </div>
+                    
+                
+    
+</div>
+</body>
+</html>

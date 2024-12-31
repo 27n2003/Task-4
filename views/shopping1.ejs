@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+          background-color: rgb(236, 210, 175);
+        }        
+        *{
+            box-sizing:border-box;                        
+            margin: 0;
+            padding: 0;
+        }
+           .panel{
+            display:flex;
+            align-items:center;
+            justify-content:space-evenly;
+            color:white;
+            background-color:#222f3d;
+            font-weight:bold;
+            gap:3rem;
+            height:70px;
+        }
+        .panel-ops{
+        display:flex;
+        position:relative;
+        
+    
+    }
+    .border{
+        height:70px;
+        width:100%;
+        display:flex;
+        gap:3rem;
+        background-color:#222f3d;
+        color:white;
+        border:transparent;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold
+    }
+.panel-ops{
+  
+}
+.header{
+        color:white ;
+        background-color:rgb(4, 4, 26);
+        align-items:center;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold;
+        margin-top:5px;
+    }
+    .navbar{
+        display:flex;
+        justify-content:space-evenly;
+        background-color:rgb(4, 4, 26);
+        align-items:center;
+        gap:2rem;
+    }
+    .ul{
+        align-items:center;
+    }
+    .ul ul{
+        display:flex;
+        gap:4rem;
+        list-style-type:none;
+        align-items:center;
+        margin-top:14px;
+
+    }
+    .ul ul li a{
+        text-decoration:none;
+        color:white;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold;
+
+    }
+
+    .cart{
+        align-items:center;   
+        display:flex;
+        gap:3rem;
+        cursor:pointer;
+    }
+    .logout{
+        background-color:aliceblue;
+        color:rgb(4, 4, 26);
+        width:110px;
+        height:50px;
+        border-radius:10px;
+        font-weight:bold;
+    }
+
+    .user{
+        font-size:small;
+        margin-top:20px;
+    }
+.footer {
+    justify-content:space-evenly;
+    width:100%;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    height:120px;
+    display:flex;
+    color:white;
+    background-color:rgb(1, 1, 19);
+    align-items:center;
+    padding-bottom:10px;
+}
+
+.fonts{
+        display:flex;
+        gap:2rem;
+    }
+
+.cname{
+    display:flex;
+  }
+  .fonts{
+        display:flex;
+        gap:2rem;
+    }
+    .image-footer{
+        display:flex;
+        align-items:center;
+    }
+
+    .image-content{
+        justify-content:center;
+        text-align:center;
+        margin-top:1rem;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold;
+
+    }
+
+    .image-content h3{
+        justify-content:center;
+        text-align:center;
+        margin-top:1rem;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold;
+
+    }
+    .image-price{
+        position:relative;
+        left:5.5rem;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight:bold;
+    }
+
+.panel-ops p{
+    display:flex;
+    padding:20px;
+    position:relative;
+    left:270px;
+
+}
+
+.four{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.one{
+  width:27%;
+  position:relative;
+  font-family:Arial, Helvetica, sans-serif;
+  border:2px white solid;
+  background-color:white;
+  transition:1s ease-in-out;
+
+}
+.one h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.one:hover{
+  
+}
+.one-main{
+  display:flex;
+  font-family:Arial, Helvetica, sans-serif;
+  position:relative;
+  font-weight:bold;
+  left:6%;
+  gap:3rem;
+  margin-top:3rem;
+}
+.img-phone{
+  text-align:center;
+  margin-top:60px;
+}
+
+.h1 h3{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold;
+  margin-top:10px;
+  margin-left:10px;
+  padding:10px;
+}
+ .fonts{
+        display:flex;
+        gap:2rem;
+    }
+
+.border1{
+        
+        width:27%;
+        color:black;
+        gap:3rem;
+        height:400px;
+        background-color:white;
+        border:transparent;
+        font-family:Arial, Helvetica, sans-serif;
+        cursor:pointer;
+}
+
+.footer {
+        justify-content:space-evenly;
+        width:100%;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        height:100px;
+        display:flex;
+        color:white;
+        background-color:rgb(17, 17, 43);
+        align-items:center;
+    }
+
+  .cname{
+    display:flex;
+  }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+      <div class="header">
+          <h5 class="header"><img src="https://i.pinimg.com/originals/81/46/cb/8146cbe3eb0e43afee75317c3c473741.png"  height="60px" width="60px">EcoTech Shopping Point</h5>
+      </div>
+      <div class="ul">    
+          <ul>
+              <li><a href="/shop1">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+          </ul>
+      </div>
+      
+      <div class="cart">
+          <i class="fa-solid fa-user fa-xl" style="color: #f0f0f0;" onclick="location.href='/profile1';"></i>
+          
+          <button class="logout" onclick="location.href='/logout'">Logout</button>
+          <i class="fa-solid fa-cart-plus fa-xl"style="color: #f0f0f0;" onclick="location.href='/showC'"></i>
+          
+      </div>
+      </nav>
+      
+</header>
+
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://m.media-amazon.com/images/S/stores-image-uploads-eu-prod/b/AmazonStores/A21TJRUUN4KGV/980b2002a0e38335d4bec9d15f0e9c0b.w3000.h1500._CR35%2C28%2C2950%2C1450_SX1500_.jpg" class="d-block" alt="..." width="100%" height="500px">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.zoutons.com/images/originals/blog/1-PUMA_1685682363.png" class="d-block " alt="..."height="500px" width="100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://m.media-amazon.com/images/G/31/img21/Luggage/2023/revamp/headers/PC/PC-Luggage_backpacks__more-3._SX3000_QL85_.jpg" class="d-block " alt="..." width="100%" height="500px">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="main">
+<div class="one-main">
+
+<div class="one border1" onclick="f1();">
+  <div class="h1">
+  <h3>Mobiles</h3>
+  </div>
+  <div class="img-phone">
+    <img src="https://spng.pngfind.com/pngs/s/55-556453_samsung-galaxy-s9-ds-hd-png-download.png" width="240px">
+  </div>
+</div>
+<div class="one border1" onclick="f3();">
+  <div class="h1">
+  <h3>Shoes</h3>
+  </div>
+  <div class="img-phone">
+    <img src="https://m.media-amazon.com/images/I/510+od2WSkL._UY535_.jpg" width="240px">
+  </div>
+</div>
+<div class="one border1" onclick="f2();">
+  <div class="h1">
+  <h3>School and laptop bags</h3>
+  </div>
+  <div class="img-phone">
+    <img src="https://m.media-amazon.com/images/I/51PiuyIPbpL._AC_UY218_.jpg" width="240px">
+  </div>
+</div>
+</div><br><br><br>
+</div>
+<div class="footer">
+  <div class="cname">
+      <div class="image-footer">
+      <img src="https://i.pinimg.com/originals/81/46/cb/8146cbe3eb0e43afee75317c3c473741.png" height="80px" width="80px">
+      </div>
+      <div class="image-content">
+      <h3>EcoTech Shopping Point</h3>
+      <p>Platform where shopping is your destiny</p>
+      </div>
+  </div>
+  <div class="fonts">
+     <i class="fa-brands fa-facebook fa-xl"></i>
+     <i class="fa-brands fa-instagram fa-xl"></i>
+     <i class="fa-brands fa-linkedin fa-xl"></i>
+     <i class="fa-solid fa-phone fa-xl"></i> 
+  </div>
+  <div class="copywrite">
+      <p>@Copyright 2023- All Right Reserved.</p>
+   </div>
+</div>
+<script>
+  function f1(){
+    location.href='shopping4.html';
+  }
+  function f2(){
+    location.href='shopping2.html';
+  }
+  function f3(){
+    location.href='shopping3.html';
+  }
+  function f4(){
+    location.href='/showC';
+  }
+    
+</script>
+</body>
+</html>
